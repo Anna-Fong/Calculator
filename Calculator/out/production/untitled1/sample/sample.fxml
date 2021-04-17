@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" GridPane.rowIndex="1">
+         <children>
+            <AnchorPane layoutX="38.0" layoutY="25.0" prefHeight="351.0" prefWidth="496.0">
+               <children>
+                  <Button layoutX="312.0" layoutY="205.0" mnemonicParsing="false" onAction="#plus" prefHeight="39.0" prefWidth="54.0" text="+" />
+                  <Button layoutX="312.0" layoutY="157.0" mnemonicParsing="false" onAction="#subtract" prefHeight="39.0" prefWidth="54.0" text="-" />
+                  <Label fx:id="lblDisplay" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="140.0" layoutY="66.0" prefHeight="39.0" prefWidth="153.0" text="0">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </Label>
+                  <Button layoutX="130.0" layoutY="205.0" mnemonicParsing="false" onAction="#addOne" prefHeight="39.0" prefWidth="54.0" text="1" textAlignment="CENTER" />
+                  <Button layoutX="190.0" layoutY="205.0" mnemonicParsing="false" onAction="#addTwo" prefHeight="39.0" prefWidth="54.0" text="2" />
+                  <Button layoutX="249.0" layoutY="205.0" mnemonicParsing="false" onAction="#addThree" prefHeight="39.0" prefWidth="54.0" text="3" />
+                  <Button layoutX="130.0" layoutY="157.0" mnemonicParsing="false" onAction="#addFour" prefHeight="39.0" prefWidth="54.0" text="4" />
+                  <Button layoutX="190.0" layoutY="157.0" mnemonicParsing="false" onAction="#addFive" prefHeight="39.0" prefWidth="54.0" text="5" />
+                  <Button layoutX="249.0" layoutY="157.0" mnemonicParsing="false" onAction="#addSix" prefHeight="39.0" prefWidth="54.0" text="6" />
+                  <Button layoutX="130.0" layoutY="111.0" mnemonicParsing="false" onAction="#addSeven" prefHeight="39.0" prefWidth="54.0" text="7" />
+                  <Button layoutX="190.0" layoutY="111.0" mnemonicParsing="false" onAction="#addEight" prefHeight="39.0" prefWidth="54.0" text="8" />
+                  <Button layoutX="249.0" layoutY="111.0" mnemonicParsing="false" onAction="#addNine" prefHeight="39.0" prefWidth="54.0" text="9" />
+                  <Button layoutX="190.0" layoutY="253.0" mnemonicParsing="false" onAction="#addZero" prefHeight="39.0" prefWidth="54.0" text="0" />
+                  <Button layoutX="312.0" layoutY="253.0" mnemonicParsing="false" onAction="#equals" prefHeight="39.0" prefWidth="54.0" text="=" />
+                  <Button layoutX="312.0" layoutY="111.0" mnemonicParsing="false" onAction="#multiply" prefHeight="39.0" prefWidth="54.0" text="*" />
+                  <Button layoutX="312.0" layoutY="65.0" mnemonicParsing="false" onAction="#clear" prefHeight="39.0" prefWidth="54.0" text="C" />
+                  <Button layoutX="130.0" layoutY="253.0" mnemonicParsing="false" onAction="#addDecimal" prefHeight="39.0" prefWidth="54.0" text="." />
+                  <Button layoutX="249.0" layoutY="253.0" mnemonicParsing="false" onAction="#divide" prefHeight="39.0" prefWidth="54.0" text="/" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
